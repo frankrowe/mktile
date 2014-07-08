@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" buffer-size="0" maximum-extent="-20037508.34,-20037508.34,20037508.34,20037508.34">
+
+<Parameters>
+  <Parameter name="bounds">-125.1123,23.6445,-68.5107,50.3455</Parameter>
+  <Parameter name="center">-97.7344,40.4469,8</Parameter>
+  <Parameter name="format">png8</Parameter>
+  <Parameter name="minzoom">8</Parameter>
+  <Parameter name="maxzoom">8</Parameter>
+  <Parameter name="scale">1</Parameter>
+  <Parameter name="metatile">1</Parameter>
+  <Parameter name="id"><![CDATA[wireless]]></Parameter>
+  <Parameter name="_updated">1404764339000</Parameter>
+  <Parameter name="tilejson"><![CDATA[2.0.0]]></Parameter>
+  <Parameter name="scheme"><![CDATA[xyz]]></Parameter>
+</Parameters>
+
+
+<Style name="wirelesstmobile-speeds5" filter-mode="first">
+  <Rule>
+    <Filter>([MAXADDOWN] = '7')</Filter>
+    <PolygonSymbolizer fill-opacity="1" fill="#006d2c" />
+  </Rule>
+</Style>
+<Style name="wirelesstmobile-speeds4" filter-mode="first">
+  <Rule>
+    <Filter>([MAXADDOWN] = '6')</Filter>
+    <PolygonSymbolizer fill-opacity="1" fill="#2ca25f" />
+  </Rule>
+</Style>
+<Style name="wirelesstmobile-speeds3" filter-mode="first">
+  <Rule>
+    <Filter>([MAXADDOWN] = '5')</Filter>
+    <PolygonSymbolizer fill-opacity="1" fill="#66c2a4" />
+  </Rule>
+</Style>
+<Style name="wirelesstmobile-speeds2" filter-mode="first">
+  <Rule>
+    <Filter>([MAXADDOWN] = '4')</Filter>
+    <PolygonSymbolizer fill-opacity="1" fill="#b2e2e2" />
+  </Rule>
+</Style>
+<Style name="wirelesstmobile-speeds1" filter-mode="first">
+  <Rule>
+    <Filter>([MAXADDOWN] = '3')</Filter>
+    <PolygonSymbolizer fill-opacity="1" fill="#edf8fb" />
+  </Rule>
+</Style>
+<Layer name="wirelesstmobile"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    <StyleName>wirelesstmobile-speeds1</StyleName>
+    <StyleName>wirelesstmobile-speeds2</StyleName>
+    <StyleName>wirelesstmobile-speeds3</StyleName>
+    <StyleName>wirelesstmobile-speeds4</StyleName>
+    <StyleName>wirelesstmobile-speeds5</StyleName>
+    <Datasource>
+       <Parameter name="file">/Volumes/Geog/ESRGC/Personal/Frank/wireless/tmobile/wireless_tmobile.shp</Parameter>
+       <Parameter name="type">shape</Parameter>
+    </Datasource>
+  </Layer>
+
+</Map>
