@@ -55,7 +55,7 @@
     <StyleName>wirelesstmobile-speeds4</StyleName>
     <StyleName>wirelesstmobile-speeds5</StyleName>
     <Datasource>
-       <Parameter name="file">/Volumes/Geog/ESRGC/Personal/Frank/wireless/tmobile/wireless_tmobile.shp</Parameter>
+       <Parameter name="file"></Parameter>
        <Parameter name="type">shape</Parameter>
     </Datasource>
   </Layer>
